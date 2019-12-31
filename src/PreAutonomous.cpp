@@ -13,4 +13,6 @@ RightFront.setStopping(hold);
 RightBack.setStopping(hold);
 RampMotor.setStopping(hold);
 LiftMotor.setStopping(hold);
+IntakeMotor1.setStopping(hold);
+IntakeMotor2.setStopping(hold);
 }

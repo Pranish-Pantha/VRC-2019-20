@@ -7,9 +7,13 @@ void RampUserUp()
    while(!RampRunning && Controller1.ButtonX.pressing())
    {
    RampMotor.spin(fwd, RampScalar * 100,pct);
+   IntakeMotor1.setStopping(brake);
+   IntakeMotor2.setStopping(brake);
    }
    //StopIntake();
    RampMotor.stop();
+   IntakeMotor1.setStopping(hold);
+   IntakeMotor2.setStopping(hold);
 }
 void RampUserDown()
 {

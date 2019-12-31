@@ -6,11 +6,14 @@ void RampTo90()
 {
   RampRunning = true;
   To90Running = true;
-  
-  RampMotor.spin(fwd, 35, pct);
-  task::sleep(1700);
+  IntakeMotor1.setStopping(brake);
+  IntakeMotor2.setStopping(brake);
+  RampMotor.setVelocity(45, pct);
+  RampMotor.spinFor(400, degrees, true);
 }
 RampMotor.stop();
+IntakeMotor1.setStopping(hold);
+  IntakeMotor2.setStopping(hold);
 RampRunning = false;
 To90Running = false;
 }
@@ -20,8 +23,8 @@ void RampToStart()
 {
   RampRunning = true;
   To0Running = true;
-  RampMotor.setVelocity(33, pct);
-RampMotor.spinFor(-210, degrees, true);
+  RampMotor.setVelocity(45, pct);
+RampMotor.spinFor(-400, degrees, true);
 }
 RampRunning = false;
 To0Running = false;

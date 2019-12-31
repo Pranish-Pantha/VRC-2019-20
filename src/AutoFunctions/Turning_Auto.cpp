@@ -11,9 +11,9 @@ void RightTurn(double angle)
     current = GyroH.rotation(degrees);
 error = GoalDegrees - current;
 vel = kP * error;
-if(vel<5)
+if(vel<8)
 {
-  vel = 5;
+  vel = 8;
 }
 LeftFront.spin( directionType::fwd,vel, velocityUnits::pct );
 LeftBack.spin(directionType::fwd,vel, velocityUnits::pct);
@@ -39,9 +39,9 @@ void LeftTurn(double angle)
     current = GyroH.rotation(degrees);
 error = -(GoalDegrees - current);
 vel = kP * error;
-if(vel<5)
+if(vel<8)
 {
-  vel = 5;
+  vel = 8;
 }
 LeftFront.spin( directionType::rev,vel, velocityUnits::pct );
 LeftBack.spin(directionType::rev,vel, velocityUnits::pct);
