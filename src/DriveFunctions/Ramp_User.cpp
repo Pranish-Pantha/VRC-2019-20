@@ -9,19 +9,27 @@ void RampUserUp()
    RampMotor.spin(fwd, RampScalar * 100,pct);
    IntakeMotor1.setStopping(brake);
    IntakeMotor2.setStopping(brake);
+   LiftMotor.setStopping(brake);
    }
    //StopIntake();
    RampMotor.stop();
    IntakeMotor1.setStopping(hold);
    IntakeMotor2.setStopping(hold);
+   LiftMotor.setStopping(hold);
 }
 void RampUserDown()
 {
  while(!RampRunning && Controller1.ButtonB.pressing())
  {
  RampMotor.spin(reverse, RampScalar * 100, pct);
+ IntakeMotor1.setStopping(brake);
+   IntakeMotor2.setStopping(brake);
+   LiftMotor.setStopping(brake);
  }
  RampMotor.stop();
+ IntakeMotor1.setStopping(hold);
+   IntakeMotor2.setStopping(hold);
+   LiftMotor.setStopping(hold);
 }
 /*
 int autoRampRun()
