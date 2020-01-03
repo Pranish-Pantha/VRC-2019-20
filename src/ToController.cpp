@@ -7,7 +7,7 @@ void toController()
   {
   Controller1.Screen.setCursor(3,1);
   Controller1.Screen.clearLine();
-  Controller1.Screen.print(GyroH.heading());
+  Controller1.Screen.print(RampMotor.position(degrees));
  this_thread::sleep_for(400);
    }
 }

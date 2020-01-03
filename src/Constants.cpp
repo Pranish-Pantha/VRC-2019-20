@@ -10,12 +10,13 @@ double IntakeScalar = 0.9;
 
 bool RampRunning = false;
 
-double Circumference = 11.7;
+double Circumference = 12.25;
+double StrafeDistance = 10;
 double DegreesToRotate;
 double TurnDegrees = 64;
 double Orientation = 0;
 double GoalDegrees;
-double kP = 1.45;
+double kP = 1.6;
 double kI = 0.003;
 double kD = 0.1;
 double error, integral, derivative, previousError;

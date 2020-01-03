@@ -10,7 +10,7 @@ void usercontrol(void) {
   thread Rampthread = thread(RampMotorRun);
 
 thread autoRampthread = thread(AutoRampRun);
-thread PrintToController = thread(toController);
+//thread PrintToController = thread(toController);
 
 thread Intakethread = thread(IntakeRun);
 thread Liftthread = thread(LiftRun);

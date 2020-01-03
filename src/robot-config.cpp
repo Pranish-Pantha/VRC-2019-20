@@ -12,11 +12,11 @@ controller Controller1 = controller(primary);
 motor LeftFront = motor(PORT7, ratio18_1, false);
 motor LeftBack = motor(PORT10, ratio18_1, false);
 motor RightFront = motor(PORT2, ratio18_1, true);
-motor RightBack = motor(PORT1, ratio18_1, true);
+motor RightBack = motor(PORT9, ratio18_1, true);
 motor RampMotor = motor(PORT4, ratio36_1, false);
-motor LiftMotor = motor(PORT3, ratio36_1, true);
-motor IntakeMotor1 = motor(PORT6, ratio36_1, false);
-motor IntakeMotor2 = motor(PORT15, ratio36_1, true);
+motor LiftMotor = motor(PORT20, ratio36_1, true);
+motor IntakeMotor1 = motor(PORT6, ratio36_1, true);
+motor IntakeMotor2 = motor(PORT15, ratio36_1, false);
 gyro GyroH = gyro(Brain.ThreeWirePort.H);
 
 // VEXcode generated functions

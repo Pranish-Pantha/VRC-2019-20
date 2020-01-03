@@ -1,14 +1,14 @@
 #include "vex.h"
 using namespace vex;
 
-int IntakeSpinInAuto(int speed)
+int SpinInAuto(int speed)
 {
 IntakeMotor1.spin(forward, speed, pct);
 IntakeMotor2.spin(forward, speed, pct);
 return 0;
 }
 //Spins intake out
-int IntakeSpinOutAuto(int speed)
+int SpinOutAuto(int speed)
 {
 IntakeMotor1.spin(reverse, speed, pct);
 IntakeMotor2.spin(reverse, speed, pct);

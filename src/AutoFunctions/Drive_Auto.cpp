@@ -27,7 +27,6 @@ LeftFront.resetRotation();
 LeftBack.resetRotation();
 RightFront.resetRotation();
 RightBack.resetRotation();
- 
 LeftFront.setVelocity(speed,pct);
 LeftBack.setVelocity(speed,pct);
 RightFront.setVelocity(speed,pct);

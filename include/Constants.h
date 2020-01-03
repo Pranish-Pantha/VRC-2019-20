@@ -7,3 +7,4 @@ extern double Circumference, DegreesToRotate, TurnDegrees, Orientation, GoalDegr
 extern double kP, kI, kD, integral, derivative, previousError, error;
 extern bool RampRunning, To90Running, To0Running;
 extern double RampEndValue;
+extern double StrafeDistance;
