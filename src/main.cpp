@@ -31,6 +31,8 @@ int main() {
   Competition.autonomous(autonomous);
   Competition.drivercontrol(usercontrol);
   preAuto();
+  Controller1.Screen.clearScreen();
+  Controller1.Screen.print("Aarush");
   while (true) {
     wait(100, msec);
   }
