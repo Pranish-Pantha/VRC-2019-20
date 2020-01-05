@@ -13,7 +13,7 @@ bool RampRunning = false;
 double Circumference = 12.25;
 double StrafeDistance = 10;
 double DegreesToRotate;
-double TurnDegrees = 64;
+double TurnDegrees = 66;
 double Orientation = 0;
 double GoalDegrees;
 double kP = 1.6;

@@ -19,11 +19,11 @@ void autonomous(void) {
   if(side==1) //BOTTOM BLUE
   {
     SpinInAuto(80);
-    DriveForward(40, 70);
-    DriveBackward(35, 70);
+    DriveForward(40, 35);
+    DriveBackward(35, 50);
     StopIntake();
     LeftTurn(TurnDegrees);
-    DriveForward(15, 50);
+    DriveForward(15, 35);
     RampTo90();
     DriveBackward(20, 25);
   }
@@ -51,13 +51,8 @@ void autonomous(void) {
   }
   if(side == 4) //TESTING
   {
-    LeftFront.setVelocity(10, pct);
-    LeftBack.setVelocity(10, pct);
-    RightFront.setVelocity(10, pct);
-    RightBack.setVelocity(10, pct);
-    LeftFront.spinFor(fwd, 1, rev, false);
-    LeftBack.spinFor(reverse, 1, rev, false);
-    RightFront.spinFor(reverse, 1, rev, false);
-    RightBack.spinFor(fwd, 1, rev, true);
+    thread printToS = thread(toController);
+    DriveForward(10, 10);
+    RightTurn(TurnDegrees);
   }
 }
