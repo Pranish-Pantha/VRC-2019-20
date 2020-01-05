@@ -1,3 +1,4 @@
+//Aarush
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
 /*    Module:       main.cpp                                                  */
@@ -10,16 +11,16 @@
 // ---- START VEXCODE CONFIGURED DEVICES ----
 // Robot Configuration:
 // [Name]               [Type]        [Port(s)]
-// Controller1          controller                    
-// LeftFront            motor         7               
-// LeftBack             motor         10              
-// RightFront           motor         2               
-// RightBack            motor         9               
-// RampMotor            motor         4               
-// LiftMotor            motor         20              
-// IntakeMotor1         motor         6               
-// IntakeMotor2         motor         15              
-// GyroH                gyro          H               
+// Controller1          controller
+// LeftFront            motor         7
+// LeftBack             motor         10
+// RightFront           motor         2
+// RightBack            motor         9
+// RampMotor            motor         4
+// LiftMotor            motor         20
+// IntakeMotor1         motor         6
+// IntakeMotor2         motor         15
+// GyroH                gyro          H
 // ---- END VEXCODE CONFIGURED DEVICES ----
 
 #include "vex.h"
