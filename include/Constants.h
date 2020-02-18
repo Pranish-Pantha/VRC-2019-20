@@ -1,0 +1,13 @@
+extern double DriveScalar;
+extern double RampScalar;
+extern double LiftScalar;
+extern double IntakeScalar;
+extern bool RampRunning;
+extern double Circumference, DegreesToRotate, TurnDegrees, Orientation, GoalDegrees;
+extern double kP, kI, kD, integral, derivative, previousError, error, kPLeft;
+extern bool RampRunning, To90Running, To0Running;
+extern double RampEndValue;
+extern double StrafeDistance;
+extern int side;
+extern bool setStone;
+extern bool autonomousRan;
