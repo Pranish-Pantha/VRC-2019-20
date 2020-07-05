@@ -10,4 +10,5 @@ Our team, Team 41920C: Fatal Traction, had a great season.
 We won the VRC Champions Award and VRC Design Award.
 ![](img/Robot.JPG)
 ## NC VRC State Tournament
+We made it to the semifinals round in the state tournament.
 ![](img/States.jpg)
